@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building Listing</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+    }
 
+    header img.header-img {
+      width: 100%;
+      display: block;
+    }
+
+    .section {
+      padding: 1.2em;
+      background: white;
+      margin-bottom: 1em;
+    }
+
+    h2 {
+      font-size: 1.3em;
+      color: #333;
+      margin-bottom: 0.5em;
+    }
+
+    p, ul, li, a {
+      font-size: 1em;
+      color: #444;
+      line-height: 1.5em;
+      text-decoration: none;
+    }
+
+    .img-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .img-row img, .single-img {
+      width: 100%;
+      max-width: 48%;
+      border-radius: 8px;
+    }
+
+    .single-img {
+      max-width: 100%;
+      display: block;
+      margin: 1em 0;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5em;
+    }
+
+    .links a {
+      flex: 1 0 30%;
+      background: #ddd;
+      padding: 0.5em;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1em;
+      background: #ccc;
+      color: black;
+    }
+
+    .swiper {
+      width: 100%;
+      height: auto;
+      margin-top: 1em;
+    }
+
+    .swiper-slide img,
+    .swiper-slide video {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="header.jpg" alt="Header Image" class="header-img" />
+  </header>
+
+  <section class="section">
+    <h2>Welcome</h2>
+    <p>Contact: John Doe | +264-123-4567 | johndoe@example.com</p>
+    <p>About: High-quality listing for serious buyers.</p>
+  </section>
+
+  <section class="section">
+    <h2>Description of Building</h2>
+    <p>This beautiful structure offers a blend of elegance and durability...</p>
+    <div class="img-row">
+      <img src="desc1.jpg" alt="Description 1">
+      <img src="desc2.jpg" alt="Description 2">
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Condition of Building</h2>
+    <p>Well maintained. Recently renovated. Move-in ready.</p>
+    <img src="condition.jpg" class="single-img" alt="Condition Image">
+  </section>
+
+  <section class="section">
+    <h2>Location of Building</h2>
+    <p>Located in the heart of Windhoek, near XYZ Park.</p>
+    <a href="https://maps.google.com/?q=-22.559722,17.083611" target="_blank">View Coordinates</a>
+  </section>
+
+  <section class="section">
+    <h2>Resume of the Building</h2>
+    <ul>
+      <li>3 Bedrooms</li>
+      <li>2 Bathrooms</li>
+      <li>Open-plan kitchen</li>
+      <li>Secure yard</li>
+      <li>Covered parking</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Gallery</h2>
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="gallery1.jpg" alt="Gallery 1" /></div>
+        <div class="swiper-slide"><img src="gallery2.jpg" alt="Gallery 2" /></div>
+        <div class="swiper-slide"><img src="gallery3.jpg" alt="Gallery 3" /></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Video Tour</h2>
+    <div class="swiper video-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><video src="video1.mp4" controls></video></div>
+        <div class="swiper-slide"><video src="video2.mp4" controls></video></div>
+        <div class="swiper-slide"><video src="video3.mp4" controls></video></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Price</h2>
+    <p>N$1,250,000 (Negotiable)</p>
+  </section>
+
+  <section class="section">
+    <h2>Bonus Information</h2>
+    <p>Historical building from the 1960s with rich heritage...</p>
+  </section>
+
+  <section class="section">
+    <h2>Links</h2>
+    <div class="links">
+      <a href="#">Facebook</a>
+      <a href="#">WhatsApp</a>
+      <a href="#">Google Maps</a>
+      <a href="#">YouTube</a>
+      <a href="#">Instagram</a>
+      <a href="#">Contact</a>
+      <a href="#">More Info</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Agent: John Doe</p>
+    <p>Phone: +264-123-4567</p>
+    <p>Email: johndoe@example.com</p>
+    <p>&copy; 2025 Tippz Cash Traders. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper('.gallery-swiper', {
+      pagination: { el: '.swiper-pagination' },
+      loop: true
+    });
+
+    new Swiper('.video-swiper', {
+      pagination: { el: '.swiper-pagination' },
+      loop: true
+    });
+  </script>
+</body>
+</html>

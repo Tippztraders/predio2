@@ -5,41 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Building Info</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
+  <!-- Header Image -->
   <header>
     <img src="header.jpg" alt="Header Image" class="header-img">
   </header>
 
+  <!-- Home Section -->
   <section class="section">
     <h2>Welcome</h2>
     <p>Contact: John Doe | +264-123-4567 | johndoe@example.com</p>
     <p>About: High-quality listing for serious buyers.</p>
   </section>
 
+  <!-- Description -->
   <section class="section">
     <h2>Description of Building</h2>
     <p>This beautiful structure offers a blend of elegance and durability...</p>
     <div class="img-row">
-      <img src="FG1.jpg" alt="Description 1">
-      <img src="FG12.jpg" alt="Description 2">
+      <img src="desc1.jpg" alt="Description 1">
+      <img src="desc2.jpg" alt="Description 2">
     </div>
   </section>
 
+  <!-- Condition -->
   <section class="section">
     <h2>Condition of Building</h2>
     <p>Well maintained. Recently renovated. Move-in ready.</p>
-    <img src="FG6.jpg" class="single-img" alt="Condition Image">
+    <img src="condition.jpg" class="single-img" alt="Condition Image">
   </section>
 
+  <!-- Location -->
   <section class="section">
     <h2>Location of Building</h2>
     <p>Located in the heart of Windhoek, near XYZ Park.</p>
     <a href="https://maps.google.com/?q=-22.559722,17.083611" target="_blank">View Coordinates</a>
   </section>
 
+  <!-- Resume -->
   <section class="section">
     <h2>Resume of the Building</h2>
     <ul>
@@ -51,40 +56,45 @@
     </ul>
   </section>
 
+  <!-- Gallery -->
   <section class="section">
     <h2>Gallery</h2>
-    <div class="swiper gallery-swiper">
+    <div class="swiper-container" id="image-gallery">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="FG8.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="FG9.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="FG10.jpg" alt=""></div>
+        <!-- Add 10 gallery images -->
+        <div class="swiper-slide"><img src="gallery1.jpg" alt="Gallery Image 1"></div>
+        <!-- Repeat for 10 total -->
       </div>
-      <div class="swiper-pagination"></div>
     </div>
   </section>
 
+  <!-- Videos -->
   <section class="section">
     <h2>Video Tour</h2>
-    <div class="swiper video-swiper">
+    <div class="swiper-container" id="video-gallery">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><video src="FGVIDS1.mp4" controls></video></div>
-        <div class="swiper-slide"><video src="FGVIDS1.mp4" controls></video></div>
-        <div class="swiper-slide"><video src="FGVIDS1.mp4" controls></video></div>
+        <!-- Add 3 videos -->
+        <div class="swiper-slide">
+          <video controls src="video1.mp4"></video>
+        </div>
+        <!-- Repeat -->
       </div>
-      <div class="swiper-pagination"></div>
     </div>
   </section>
 
+  <!-- Price -->
   <section class="section">
     <h2>Price</h2>
     <p>N$1,250,000 (Negotiable)</p>
   </section>
 
+  <!-- Bonus Information -->
   <section class="section">
     <h2>Bonus Information</h2>
     <p>Historical building from the 1960s with rich heritage...</p>
   </section>
 
+  <!-- Links -->
   <section class="section">
     <h2>Links</h2>
     <div class="links">
@@ -98,6 +108,7 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="footer">
     <p>Agent: John Doe</p>
     <p>Phone: +264-123-4567</p>
@@ -105,7 +116,6 @@
     <p>&copy; 2025 Tippz Cash Traders. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

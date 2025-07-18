@@ -1,14 +1,15 @@
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
+  background: #fff;
   color: #333;
 }
 
-header .header-img {
+.header-img {
   width: 100%;
-  height: auto;
-  display: block;
+  max-height: 220px;
+  object-fit: cover;
 }
 
 .section {
@@ -16,68 +17,54 @@ header .header-img {
   border-bottom: 1px solid #ccc;
 }
 
-.section h2 {
+h2 {
   font-size: 1.2em;
-  color: #222;
   margin-bottom: 0.5em;
 }
 
 .img-row {
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
   overflow-x: auto;
 }
 
-.img-row img {
-  width: 48%;
-  border-radius: 8px;
-}
-
+.img-row img,
 .single-img {
   width: 100%;
-  margin-top: 1em;
   border-radius: 8px;
-}
-
-ul {
-  padding-left: 1.2em;
+  max-width: 100%;
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
-  justify-content: center;
-  margin-top: 0.5em;
 }
 
 .links a {
-  background: #007bff;
-  color: white;
+  background: #f0f0f0;
   padding: 0.5em 1em;
-  border-radius: 20px;
-  font-size: 0.9em;
+  border-radius: 5px;
   text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5em 1em;
-  background: #eee;
   font-size: 0.9em;
   color: #000;
 }
 
-/* Swiper Custom Styling */
+.footer {
+  text-align: center;
+  background: #eee;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
 .swiper {
   width: 100%;
   height: auto;
-  margin-top: 1em;
+  margin: 1em 0;
 }
 
 .swiper-slide img,
 .swiper-slide video {
   width: 100%;
-  height: auto;
   border-radius: 8px;
 }

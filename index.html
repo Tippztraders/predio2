@@ -13,47 +13,73 @@
       background: #f8f8f8;
     }
 
+    /* === HEADER === */
     header img.header-img {
       width: 100%;
       display: block;
+      border-bottom: 4px solid #ffd700;
     }
 
+    /* === SECTIONS === */
     .section {
-      padding: 1.2em;
-      background: white;
+      padding: 1.5em 1em;
       margin-bottom: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
+    .section:nth-of-type(1) { background: #fffce6; }
+    .section:nth-of-type(2) { background: #e6fff4; }
+    .section:nth-of-type(3) { background: #e6f0ff; }
+    .section:nth-of-type(4) { background: #fff0e6; }
+    .section:nth-of-type(5) { background: #f9e6ff; }
+    .section:nth-of-type(6) { background: #f0f0f0; }
+    .section:nth-of-type(7) { background: #fffbe6; }
+    .section:nth-of-type(8) { background: #e6fff4; }
+    .section:nth-of-type(9) { background: #f0f8ff; }
+    .section:nth-of-type(10) { background: #e6e6e6; }
+
+    /* === TEXT === */
     h2 {
-      font-size: 1.3em;
-      color: #333;
+      font-size: 1.4em;
+      color: #222;
       margin-bottom: 0.5em;
+      border-left: 5px solid #ffd700;
+      padding-left: 10px;
     }
 
     p, ul, li, a {
       font-size: 1em;
-      color: #444;
-      line-height: 1.5em;
+      color: #333;
+      line-height: 1.6em;
       text-decoration: none;
     }
 
+    ul {
+      padding-left: 1.2em;
+    }
+
+    /* === IMAGE STYLES === */
     .img-row {
       display: flex;
       gap: 10px;
+      margin-top: 1em;
     }
 
-    .img-row img, .single-img {
+    .img-row img,
+    .single-img {
       width: 100%;
       max-width: 48%;
       border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
 
     .single-img {
       max-width: 100%;
-      display: block;
       margin: 1em 0;
     }
 
+    /* === LINKS GRID === */
     .links {
       display: flex;
       flex-wrap: wrap;
@@ -63,19 +89,33 @@
 
     .links a {
       flex: 1 0 30%;
-      background: #ddd;
-      padding: 0.5em;
+      background: #dbeaff;
+      padding: 0.7em;
       text-align: center;
-      border-radius: 4px;
+      border-radius: 6px;
+      color: #003366;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
+    .links a:hover {
+      background: #c1ddff;
+    }
+
+    /* === FOOTER === */
     .footer {
       text-align: center;
-      padding: 1em;
-      background: #ccc;
-      color: black;
+      padding: 1.5em 1em;
+      background: #333;
+      color: white;
+      font-size: 0.9em;
     }
 
+    .footer p {
+      margin: 0.4em 0;
+    }
+
+    /* === SWIPER === */
     .swiper {
       width: 100%;
       height: auto;
@@ -86,6 +126,7 @@
     .swiper-slide video {
       width: 100%;
       border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
   </style>
 </head>

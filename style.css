@@ -26,7 +26,7 @@ header img.header-img {
 .section:nth-of-type(3) { background: #e6f0ff; }   /* Light blue */
 .section:nth-of-type(4) { background: #fff0e6; }   /* Light peach */
 .section:nth-of-type(5) { background: #f9e6ff; }   /* Lavender */
-.section:nth-of-type(6) { background: #f0f0f0; }   /* Bright yellow */
+.section:nth-of-type(6) { background: #FF0000; }   /* Origal grey  #f0f0f0; change to red */
 .section:nth-of-type(7) { background: #fffbe6; }   /* Soft yellow */
 .section:nth-of-type(8) { background: #e6fff4; }
 .section:nth-of-type(9) { background: #f0f8ff; }

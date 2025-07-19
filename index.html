@@ -105,53 +105,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    // Hero Image
-    document.getElementById('hero-section').innerHTML = `
-      <img src="js/src=image/hero.jpg" alt="Hero Image">
-    `;
-
-    // Image Gallery
-    const imagePaths = [
-      "js/src=image/gallery1.jpg",
-      "js/src=image/gallery2.jpg",
-      "js/src=image/gallery3.jpg"
-    ];
-    const imageGallery = document.getElementById('image-gallery');
-    imagePaths.forEach(src => {
-      const slide = document.createElement('div');
-      slide.className = 'swiper-slide';
-      slide.innerHTML = `<img src="${src}" alt="Gallery Image">`;
-      imageGallery.appendChild(slide);
-    });
-
-    // Video Gallery
-    const videoPaths = [
-      "js/src=image/video1.mp4",
-      "js/src=image/video2.mp4"
-    ];
-    const videoGallery = document.getElementById('video-gallery');
-    videoPaths.forEach(src => {
-      const slide = document.createElement('div');
-      slide.className = 'swiper-slide';
-      slide.innerHTML = `<video controls src="${src}"></video>`;
-      videoGallery.appendChild(slide);
-    });
-
-    // Swiper init
-    new Swiper('.gallery-swiper', {
-      loop: true,
-      pagination: {
-        el: '.gallery-swiper .swiper-pagination',
-      },
-    });
-
-    new Swiper('.video-swiper', {
-      loop: true,
-      pagination: {
-        el: '.video-swiper .swiper-pagination',
-      },
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -27,6 +27,15 @@
       font-weight: bold;
     }
 
+    .hero {
+      margin: 1em 0;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
     .section {
       background-color: #e1f5fe;
       padding: 1em;
@@ -38,12 +47,6 @@
       width: 100%;
       height: auto;
       margin: 1em 0;
-    }
-
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .swiper-slide img,
@@ -68,30 +71,29 @@
       Tippz Building Listing
     </header>
 
+    <!-- HERO -->
+    <section class="hero" id="hero-section"></section>
+
+    <!-- OVERVIEW -->
     <section class="section">
       <h2>Overview</h2>
       <p>This property is located in the heart of town, offering easy access to nearby shops and transport.</p>
     </section>
 
+    <!-- GALLERY -->
     <section class="section">
       <h2>Gallery</h2>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="https://via.placeholder.com/700x400?text=Image+1" alt="Image 1" /></div>
-          <div class="swiper-slide"><img src="https://via.placeholder.com/700x400?text=Image+2" alt="Image 2" /></div>
-          <div class="swiper-slide"><img src="https://via.placeholder.com/700x400?text=Image+3" alt="Image 3" /></div>
-        </div>
+      <div class="swiper gallery-swiper">
+        <div class="swiper-wrapper" id="image-gallery"></div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
 
+    <!-- VIDEO TOUR -->
     <section class="section">
       <h2>Video Tour</h2>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video></div>
-          <div class="swiper-slide"><video controls src="https://www.w3schools.com/html/movie.mp4"></video></div>
-        </div>
+      <div class="swiper video-swiper">
+        <div class="swiper-wrapper" id="video-gallery"></div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
@@ -104,10 +106,50 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    new Swiper('.swiper', {
+    // Hero Image
+    document.getElementById('hero-section').innerHTML = `
+      <img src="js/src=image/hero.jpg" alt="Hero Image">
+    `;
+
+    // Image Gallery
+    const imagePaths = [
+      "js/src=image/gallery1.jpg",
+      "js/src=image/gallery2.jpg",
+      "js/src=image/gallery3.jpg"
+    ];
+    const imageGallery = document.getElementById('image-gallery');
+    imagePaths.forEach(src => {
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide';
+      slide.innerHTML = `<img src="${src}" alt="Gallery Image">`;
+      imageGallery.appendChild(slide);
+    });
+
+    // Video Gallery
+    const videoPaths = [
+      "js/src=image/video1.mp4",
+      "js/src=image/video2.mp4"
+    ];
+    const videoGallery = document.getElementById('video-gallery');
+    videoPaths.forEach(src => {
+      const slide = document.createElement('div');
+      slide.className = 'swiper-slide';
+      slide.innerHTML = `<video controls src="${src}"></video>`;
+      videoGallery.appendChild(slide);
+    });
+
+    // Swiper init
+    new Swiper('.gallery-swiper', {
       loop: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.gallery-swiper .swiper-pagination',
+      },
+    });
+
+    new Swiper('.video-swiper', {
+      loop: true,
+      pagination: {
+        el: '.video-swiper .swiper-pagination',
       },
     });
   </script>

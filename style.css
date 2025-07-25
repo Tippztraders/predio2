@@ -2,9 +2,10 @@ body {
   font-family: sans-serif;
   color: #222;
   text-align: center;
-   background-color: yellow;
-    }
+  background-color: yellow;
+}
 
+/* PRICE SECTION STYLING */
 #preco {
   padding: 40px 20px;
   background-color: #fff9c4; /* light yellow */
@@ -13,46 +14,63 @@ body {
   max-width: 650px;
   margin: 40px auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center; 
+  text-align: center;
 }
 
-.image-placeholder1 {
-  width: 100%;
-  max-width: 400px;
-  height: 15em;
-  background-color: blue;
-  border: 3px solid black;
-  color: red;
-  aspect-ratio: 4 / 3; /* or 16 / 9, 1 / 1, etc. */
-  font-size: 1.2rem;
-  font-style: italic;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto; /* this is space between boxes */
-}
-
-/* IMAGE PLACEHOLDER GREEN */
-.image-placeholder2 {
-  width: 100%;
-  max-width: 400px;
-  height: 250px;
-  background-color: #e6ffe6;
-  border: 3px solid green;
-  color: #2a2;
-  font-size: 1.2rem;
-  font-style: italic;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px auto;
-}
-
+/* SITE LAYOUT CONTAINER */
 .site-container {
-  max-width: 920px;  
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 1em;
   text-align: center;
+}
+
+/* IMAGE PLACEHOLDER 1 – BLUE BOX WITH IMAGE AND TEXT */
+.image-placeholder1 {
+  width: 100%;
+  max-width: 400px;
+  background-color: blue;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-placeholder1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.image-placeholder1 span {
+  color: red;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* IMAGE PLACEHOLDER 2 – GREEN BOX WITH IMAGE AND TEXT */
+.image-placeholder2 {
+  width: 100%;
+  max-width: 400px;
+  background-color: #e6ffe6;
+  border: 3px solid green;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.image-placeholder2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.image-placeholder2 span {
+  color: #2a2;
+  font-size: 1.2rem;
+  font-style: italic;
 }

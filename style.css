@@ -1,7 +1,7 @@
 .image-placeholder1 {
   margin: 20px auto;
   padding: 10px;
-  max-width: 300px;             /* ✅ Small fixed max width */
+  max-width: 400px;             /* ✅ Small fixed max width */
   background-color: #e0f7fa;
   border: 2px solid #00796b;
   border-radius: 10px;

@@ -48,3 +48,42 @@
   font-size: 1.2rem;
   font-style: italic;
 }
+
+
+/* NEW STUFF FROM GOOGLE */
+.image-placeholder1 {
+  display: block;                 /* Ensure it's treated as a block */
+  margin-left: auto;             /* Center horizontally */
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  background-color: blue;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  float: none;                   /* Prevent float interference */
+  clear: both;                   /* Extra safety */
+  position: relative;            /* Helps avoid positioning bugs */
+}
+
+.image-placeholder1 img {
+  display: block;                /* Remove inline spacing glitch */
+  margin: 0 auto;                /* Center image inside */
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.image-placeholder1 p,
+.image-placeholder1 span {
+  display: block;
+  color: red;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+

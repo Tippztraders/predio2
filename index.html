@@ -13,38 +13,64 @@
       background: #f8f8f8;
     }
 
-    .container {
+    .site-container {
       max-width: 720px;
       margin: 0 auto;
       padding: 0 1em;
     }
-  
- <section id="preco">
-  <h2><u>💰 Preço</u></h2>
+
+    .image-placeholder1,
+    .image-placeholder2 {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      border: 2px dashed #ccc;
+      padding: 10px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+
+    .image-placeholder1 img,
+    .image-placeholder2 img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="preco">
+    <h2><u>💰 Preço</u></h2>
+    <div class="site-container">
+      <p><b>✅ Preço Atual:</b> US$ 2.2 (dois milhões e duzentos mil)</p>
+    </div>
+  </section>
+
   <div class="site-container">
-   <p><b>✅ Preço Atual:US$ 2.2 (dois milhões e duzentos mil)</p>    
+    <div class="image-placeholder1">
+      <img src="js/src=image/GROUP1a.jpg" alt="Side View">
+      <span>Imagem 1</span>
+    </div>
+
+    <div class="image-placeholder2">
+      <img src="js/src=image/GROUP2a.jpg" alt="Front View">
+      <span>Imagem 2</span>
+    </div>
   </div>
-</section>
 
-<div class="site-container">
-
-  <div class="image-placeholder1">
-    <span>Imagem 1</span>
-  </div>
-</div>
-
-<div class="image-placeholder2">
-    <span>Imagem 2</span>
-  </div>
-</div>
-
-
-     
-    <footer>
-      <p>Agent: John Doe | Contact: +264 81 234 5678 | Email: info@example.com</p>
-      <p>&copy; 2025 Tippz Cash Traders. All rights reserved.</p>
-    </footer>
-  </div>
+  <footer>
+    <p>Agent: John Doe | Contact: +264 81 234 5678 | Email: info@example.com</p>
+    <p>&copy; 2025 Tippz Cash Traders. All rights reserved.</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

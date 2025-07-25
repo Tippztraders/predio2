@@ -24,12 +24,37 @@
       text-align: center;
     }
 
-   
-        footer {
+    .image-placeholder1 {
+      margin: 20px auto;
+      padding: 10px;
+      max-width: 320px; /* ✅ smaller size */
+      background-color: #e0f7fa;
+      border: 2px solid #00796b;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .image-placeholder1 img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
+    .image-placeholder1 span {
+      display: block;
+      margin-top: 10px;
+      color: red;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    footer {
       background: #333;
       color: #fff;
       text-align: center;
       padding: 1em;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -37,18 +62,21 @@
 <body>
 
   <div class="site-container">
+
+    <!-- ✅ Image Block -->
     <div class="image-placeholder1">
-      <div align="center">
-      <img src="GROUP2a.jpg" alt="Side View" class="center">
+      <img src="GROUP2a.jpg" alt="Side View">
       <span>Toque para Abrir</span>
-    </div>
-      
+    </div> <!-- ✅ CLOSE HERE -->
+
+    <!-- ✅ Footer is now outside the image box -->
     <footer>
-    <p>Agent: John Doe | Contact: +264 81 234 5678 | Email: info@example.com</p>
-    <p>&copy; 2025 Tippz Cash Traders. All rights reserved.</p>
-  </footer>
-</div> 
-    
+      <p>Agent: John Doe | Contact: +264 81 234 5678 | Email: info@example.com</p>
+      <p>&copy; 2025 Tippz Cash Traders. All rights reserved.</p>
+    </footer>
+
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

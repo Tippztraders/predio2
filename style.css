@@ -1,33 +1,3 @@
-body {
-  font-family: sans-serif;
-  color: #222;
-  text-align: center;
-  background-color: yellow;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- PRICE SECTION STYLING 
-#preco {
-  padding: 40px 20px;
-  background-color: #fff9c4; /* light yellow */
-  border: 2px solid #fbc02d;
-  border-radius: 12px;
-  max-width: 650px;
-  margin: 40px auto;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  text-align: center;
-} 
-*/
-
-/* SITE LAYOUT CONTAINER */
-.site-container {
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 0 1em;
-  text-align: center;
-}
 
 /* IMAGE PLACEHOLDER 1 – BLUE BOX WITH IMAGE AND TEXT */
 .image-placeholder1 {
